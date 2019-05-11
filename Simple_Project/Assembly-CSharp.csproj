@@ -60,12 +60,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CriticalDamage.cs" />
-    <Compile Include="Assets\Scripts\DamageType.cs" />
-    <Compile Include="Assets\Scripts\DefaultDamage.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PoisonDamage.cs" />
+    <Compile Include="Assets\muip-master\Scripts\CustomDropdown.cs" />
+    <Compile Include="Assets\muip-master\Scripts\CustomInputField.cs" />
+    <Compile Include="Assets\muip-master\Scripts\DemoHamburgerMenu.cs" />
+    <Compile Include="Assets\muip-master\Scripts\DemoManager.cs" />
+    <Compile Include="Assets\muip-master\Scripts\DemoPanelAnim.cs" />
+    <Compile Include="Assets\muip-master\Scripts\DropdownItem.cs" />
+    <Compile Include="Assets\muip-master\Scripts\LaunchURL.cs" />
+    <Compile Include="Assets\muip-master\Scripts\ModalByScript.cs" />
+    <Compile Include="Assets\muip-master\Scripts\ModalDialog.cs" />
+    <Compile Include="Assets\muip-master\Scripts\ModalWindowTabs.cs" />
+    <Compile Include="Assets\muip-master\Scripts\NotificationExample.cs" />
+    <Compile Include="Assets\muip-master\Scripts\PBFilled.cs" />
+    <Compile Include="Assets\muip-master\Scripts\ProgressBar.cs" />
+    <Compile Include="Assets\muip-master\Scripts\RadialSlider.cs" />
+    <Compile Include="Assets\muip-master\Scripts\RatingSystem.cs" />
+    <Compile Include="Assets\muip-master\Scripts\SwitchAnim.cs" />
+    <Compile Include="Assets\muip-master\Scripts\ToggleAnim.cs" />
+    <None Include="Assets\muip-master\Licence.txt" />
+    <None Include="Assets\muip-master\Read Me.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Projects/Simple_Project/Simple_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -281,6 +294,21 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Programs/Unity3d/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+      <HintPath>D:/Projects/Simple_Project/Simple_Project/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+      <HintPath>D:/Projects/Simple_Project/Simple_Project/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+      <HintPath>D:/Projects/Simple_Project/Simple_Project/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+      <HintPath>D:/Projects/Simple_Project/Simple_Project/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>D:/Projects/Simple_Project/Simple_Project/Assets/Plugins/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Projects/Simple_Project/Simple_Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
@@ -636,6 +664,28 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:/Programs/Unity3d/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{CCEFD1EA-7E4A-E606-00BF-C56B2D7DBC30}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AssemblyUnderTests.csproj">
+      <Project>{CA3BCD6F-F4F1-1928-E60C-1B42BCB410ED}</Project>
+      <Name>AssemblyUnderTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
+      <Project>{F7B090B9-B304-373E-D8ED-0F6527228A72}</Project>
+      <Name>Zenject-ReflectionBaking-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
+      <Project>{E032EFEC-95B7-8618-6CAB-4CE6FA5CA53F}</Project>
+      <Name>Zenject-PoolMonitor-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject.csproj">
+      <Project>{3925541D-DBF2-DA62-2870-5E0790106A72}</Project>
+      <Name>Zenject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

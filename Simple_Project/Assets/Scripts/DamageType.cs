@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class DamageType : MonoBehaviour
 {
-    public abstract void SetDamage(float damagedParam);
+    public abstract void SetDamage(Player target);
 }

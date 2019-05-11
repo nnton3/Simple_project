@@ -3,8 +3,27 @@ using System.Collections;
 
 public class PoisonDamage : DamageType
 {
-    public override void SetDamage(float damagedParam)
+    Player currentTarget;
+    [SerializeField] float _damageOnTick = 5;
+    public float DamageOnTick => _damageOnTick;
+    [SerializeField] float _poisonEffectDuration = 5;
+    public float PoisonEffectDuration => _poisonEffectDuration;
+
+    public override void SetDamage(Player target)
     {
-        throw new System.NotImplementedException();
+        currentTarget = target;
+        StartCoroutine("PoisonDamageEffect");
+    }
+
+    IEnumerator PoisonDamageEffect()
+    {
+        InvokeRepeating("PoisonTick", 1, 1);
+        yield return new WaitForSeconds(_poisonEffectDuration);
+        CancelInvoke("PoisonTick");
+    }
+
+    void PoisonTick()
+    {
+        currentTarget.ApplyDamage(_damageOnTick);
     }
 }

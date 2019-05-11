@@ -7,12 +7,27 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] List<DamageType> damageTypes;
 
-    public void Attack()
+    public void DefaultAttack()
     {
         if (damageTypes.Count > 0)
         {
-            var currentDamageType = damageTypes[Random.Range(0, damageTypes.Count)];
-            player.ApplyDamage(currentDamageType);
+            damageTypes[0].SetDamage(player);
+        }
+    }
+
+    public void CriticalAttack()
+    {
+        if (damageTypes.Count > 1)
+        {
+            damageTypes[1].SetDamage(player);
+        }
+    }
+
+    public void PoisonAttack()
+    {
+        if (damageTypes.Count > 2)
+        {
+            damageTypes[2].SetDamage(player);
         }
     }
 }

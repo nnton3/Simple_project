@@ -6,8 +6,13 @@ public class DefaultDamage : DamageType
     [SerializeField] float _damage;
     public float Damage => _damage;
 
-    public override void SetDamage(float damagedParam)
+    public DefaultDamage(float damage)
     {
-        damagedParam -= _damage;
+        _damage = damage;
+    }
+
+    public override void SetDamage(Player target)
+    {
+        target.ApplyDamage(_damage);
     }
 }

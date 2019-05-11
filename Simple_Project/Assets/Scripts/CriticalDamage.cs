@@ -6,14 +6,20 @@ public class CriticalDamage : DamageType
 {
     DefaultDamage defaultDamage;
 
-    private void Start()
+    public CriticalDamage(float damageScale)
     {
-        defaultDamage.GetComponent<DefaultDamage>();
+        _damageScale = damageScale;
     }
 
-    [SerializeField] float damageScale;
-    public override void SetDamage(float damagedParam)
+    private void Start()
     {
-        damagedParam -= (defaultDamage.Damage * damageScale);
+        defaultDamage = GetComponent<DefaultDamage>();
+    }
+
+    [SerializeField] float _damageScale;
+    public float DamageScale => _damageScale;
+    public override void SetDamage(Player target)
+    {
+        target.ApplyDamage(defaultDamage.Damage * _damageScale);
     }
 }
