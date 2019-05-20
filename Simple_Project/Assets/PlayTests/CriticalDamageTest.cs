@@ -17,7 +17,7 @@ public class CriticalDamageTest : ZenjectUnitTestFixture
     [UnityTest]
     public IEnumerator CriticalDamageRunTest()
     {
-        var player = GameObject.FindObjectOfType<Player>();
+        var player = GameObject.FindObjectOfType<InputDamageController>();
         var enemy = GameObject.Find("Enemy");
         var defaultDamage = enemy.GetComponent<DefaultDamage>();
         var criticalDamage = enemy.GetComponent<CriticalDamage>();

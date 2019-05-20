@@ -7,12 +7,12 @@ public class PlayerHealthBar : MonoBehaviour
 {
     Slider _healthBar;
     float maxHealth;
-    Player player;
+    InputDamageController player;
 
     private void Start()
     {
         _healthBar = GetComponent<Slider>();
-        player = GameObject.FindObjectOfType<Player>();
+        player = GameObject.FindObjectOfType<InputDamageController>();
         maxHealth = player.Health;
         UpdateHealthBar();
         player.Damaged.AddListener(() => UpdateHealthBar());

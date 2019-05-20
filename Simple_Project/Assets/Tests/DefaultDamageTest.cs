@@ -18,7 +18,7 @@ namespace Tests
         [Test]
         public void DefaulDamageTestSimplePasses()
         {
-            var player = new Player(100);
+            var player = new InputDamageController(100);
             var defaultDamage = new DefaultDamage(20);
 
             float correctHealthValue = player.Health - defaultDamage.Damage;

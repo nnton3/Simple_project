@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Player player;
+    [SerializeField] InputDamageController player;
 
     [SerializeField] List<DamageType> damageTypes;
 

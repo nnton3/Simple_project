@@ -17,7 +17,7 @@ public class PoisonDamageTest : ZenjectUnitTestFixture
     [UnityTest]
     public IEnumerator PoisonDmageRunTest()
     {
-        var player = GameObject.FindObjectOfType<Player>();
+        var player = GameObject.FindObjectOfType<InputDamageController>();
         var enemy = GameObject.Find("Enemy");
         var poisonDamage = enemy.GetComponent<PoisonDamage>();
 
