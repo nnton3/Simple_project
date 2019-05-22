@@ -25,7 +25,6 @@ public class MoveController : MonoBehaviour
     void Move()
     {
         var moveVector = _input * _movespeed;
-        Debug.Log(moveVector);
         _rb.velocity = transform.TransformDirection(new Vector3 (moveVector.x, _rb.velocity.y, moveVector.y));
     }
 

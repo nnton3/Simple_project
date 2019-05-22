@@ -62,15 +62,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AnimationController\AnimationController.cs" />
     <Compile Include="Assets\Scripts\DamageTypes\CriticalDamage.cs" />
     <Compile Include="Assets\Scripts\DamageTypes\DamageType.cs" />
     <Compile Include="Assets\Scripts\DamageTypes\DefaultDamage.cs" />
     <Compile Include="Assets\Scripts\DamageTypes\InputDamageController.cs" />
     <Compile Include="Assets\Scripts\DamageTypes\PoisonDamage.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\EventController\PlayerEventController.cs" />
     <Compile Include="Assets\Scripts\Movement\MoveController.cs" />
     <Compile Include="Assets\Scripts\Movement\PlayerMoveController.cs" />
     <Compile Include="Assets\Scripts\PlayerHealthBar.cs" />
+    <Compile Include="Assets\Scripts\Weapon\MeleeWeapon.cs" />
+    <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>

@@ -7,20 +7,20 @@ public class PlayerHealthBar : MonoBehaviour
 {
     Slider _healthBar;
     float maxHealth;
-    InputDamageController player;
+    InputDamageController _inputDamageController;
 
     private void Start()
     {
         _healthBar = GetComponent<Slider>();
-        player = GameObject.FindObjectOfType<InputDamageController>();
-        maxHealth = player.Health;
+        _inputDamageController = GetComponentInParent<InputDamageController>();
+        maxHealth = _inputDamageController.Health;
         UpdateHealthBar();
-        player.Damaged.AddListener(() => UpdateHealthBar());
+        _inputDamageController.Damaged.AddListener(() => UpdateHealthBar());
     }
 
     void UpdateHealthBar()
     {
         float percentOfHealth = maxHealth / 100;
-        _healthBar.value = player.Health / percentOfHealth;
+        _healthBar.value = _inputDamageController.Health / percentOfHealth;
     }
 }
