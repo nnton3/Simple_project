@@ -471,7 +471,7 @@ PrefabInstance:
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.969999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
@@ -486,12 +486,12 @@ PrefabInstance:
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
@@ -511,17 +511,17 @@ PrefabInstance:
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -221.99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -125.62998
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 480977846634905057, guid: 654aebc9515dc464698c3509e4256c33,
         type: 3}
@@ -764,6 +764,7 @@ GameObject:
   - component: {fileID: 1863202086}
   - component: {fileID: 1863202085}
   - component: {fileID: 1863202084}
+  - component: {fileID: 1863202087}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -778,9 +779,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863202082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2122989423}
   m_Father: {fileID: 2120714901}
@@ -789,8 +790,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863202084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,8 +840,8 @@ Canvas:
   m_GameObject: {fileID: 1863202082}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 534669904}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -851,6 +852,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1863202087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863202082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef72d256b4dfa048a9f32d0ae1cb925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093063028
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +876,7 @@ GameObject:
   - component: {fileID: 2093063032}
   - component: {fileID: 2093063031}
   - component: {fileID: 2093063030}
+  - component: {fileID: 2093063033}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -939,7 +953,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 534669904}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -950,6 +964,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2093063033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093063028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef72d256b4dfa048a9f32d0ae1cb925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2120714897
 GameObject:
   m_ObjectHideFlags: 0

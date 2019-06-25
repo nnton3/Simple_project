@@ -72,7 +72,8 @@
     <Compile Include="Assets\Scripts\EventController\PlayerEventController.cs" />
     <Compile Include="Assets\Scripts\Movement\MoveController.cs" />
     <Compile Include="Assets\Scripts\Movement\PlayerMoveController.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\LookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\UI\PlayerHealthBar.cs" />
     <Compile Include="Assets\Scripts\Weapon\MeleeWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
     <Reference Include="UnityEngine.AIModule">

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject", "Zenject.csproj", "{3925541D-DBF2-DA62-2870-5E0790106A72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTests", "PlayTests.csproj", "{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyUnderTests", "AssemblyUnderTests.csproj", "{CA3BCD6F-F4F1-1928-E60C-1B42BCB410ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTests", "PlayTests.csproj", "{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-PoolMonitor-Editor", "Zenject-PoolMonitor-Editor.csproj", "{E032EFEC-95B7-8618-6CAB-4CE6FA5CA53F}"
 EndProject
@@ -27,14 +27,14 @@ Global
 		{3925541D-DBF2-DA62-2870-5E0790106A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3925541D-DBF2-DA62-2870-5E0790106A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3925541D-DBF2-DA62-2870-5E0790106A72}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CA3BCD6F-F4F1-1928-E60C-1B42BCB410ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CA3BCD6F-F4F1-1928-E60C-1B42BCB410ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA3BCD6F-F4F1-1928-E60C-1B42BCB410ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA3BCD6F-F4F1-1928-E60C-1B42BCB410ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD4D6B1-8394-09D4-7CAA-E7065A14D388}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E032EFEC-95B7-8618-6CAB-4CE6FA5CA53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E032EFEC-95B7-8618-6CAB-4CE6FA5CA53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E032EFEC-95B7-8618-6CAB-4CE6FA5CA53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
